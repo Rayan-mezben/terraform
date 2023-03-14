@@ -29,7 +29,6 @@ resource "openstack_networking_router_interface_v2" "interface" {
   subnet_id = openstack_networking_subnet_v2.subnet.id
 }
 
-# Security group
 
 resource "openstack_networking_secgroup_v2" "my_security_group" {
   description = "Groupe de sécurite pour le port 22"
